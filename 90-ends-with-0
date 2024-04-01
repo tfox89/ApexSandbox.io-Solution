@@ -1,0 +1,10 @@
+public Boolean isEndWithZero(Integer num){
+     //code here
+
+     if(isEndWithZero = 0){
+         return true;
+     }
+     else {
+         return false;
+     }
+}
