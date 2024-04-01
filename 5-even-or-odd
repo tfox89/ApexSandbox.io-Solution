@@ -4,7 +4,7 @@ public String evenOrOdd(Integer num) {
         if(remainder == 0){
             return 'even'
         }
-        else 
+        else {
             return 'odd'
         }
     
