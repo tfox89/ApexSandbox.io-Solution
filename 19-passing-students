@@ -1,16 +1,16 @@
 public Boolean isPassed(Boolean passedExam, Boolean passedAssignments, Boolean passedProject) {
-    //code here
-Boolean passed = false;
-if(passedExam && passedAssignments){
-    passed = true;
-}
-else if (passedProject && passedAssignments){
-     passed = true;
-}
 
-else if ( passedExam && passedProject){
-    passed = true;
-}
-return passed
+   
 
+    Boolean passed = false; // Initialize passed variable
+    
+    if (passedExam && passedAssignments) {
+        passed = true;
+    } else if (passedProject && passedAssignments) {
+        passed = true;
+    } else if (passedExam && passedProject) {
+        passed = true;
+    }
+
+    return passed;
 }
