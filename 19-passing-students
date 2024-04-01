@@ -1,6 +1,6 @@
 public Boolean isPassed(Boolean passedExam, Boolean passedAssignments, Boolean passedProject) {
     //code here
-public Boolean passed = false;
+ Boolean passed = false;
 if(isPassed = passedExam && passedAssignments){
     passed = true;
 }
