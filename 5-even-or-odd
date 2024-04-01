@@ -1,8 +1,11 @@
 public String evenOrOdd(Integer num) {
-    Integer remainder = Math.mod(num, 2);
-    if (remainder == 0) {
-        return 'even';
-    } else {
-        return 'odd';
-    }
+    //code here
+   Integer remainder = Math.mod (num, 2);
+        if(remainder == 0){
+            return 'even'
+        }
+        else {
+            return 'odd'
+        }
+    
 }
