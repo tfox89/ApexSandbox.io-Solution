@@ -1,7 +1,7 @@
 public Boolean isEndWithZero(Integer num){
      //code here
 
-     if(isEndWithZero == 0){
+     if(num == 000){
          return true;
      }
      else {
