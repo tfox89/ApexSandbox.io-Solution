@@ -1,0 +1,6 @@
+public String evenOrOdd(Integer num) {
+    //code here
+    Math.mod (num, 2){
+        return num;
+    }
+}
