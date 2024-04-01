@@ -1,6 +1,6 @@
 public Decimal computeTip(Decimal total, Integer percent) {
     //code here
-    string <totalbill> = total * percent;
+    String <totalbill> = total * percent;
     return totalbill /100; 
-    
+
 }
