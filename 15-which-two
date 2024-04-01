@@ -1,0 +1,16 @@
+public String whichTwo(Integer a, Integer b, Integer c) {
+    //code here
+    if (sum a & b == c){
+        return c;
+    
+    }
+    else if (sum b & c == a){
+        return a;
+    }
+    else if (sum c & a == b){
+        return b;
+    }
+    else {
+    retun null;
+    }
+}
