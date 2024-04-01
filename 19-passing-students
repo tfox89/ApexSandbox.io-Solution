@@ -7,10 +7,9 @@ else if (isPassed = passedProject && passedAssignments){
     return passed = true;
 }
 
-else if (isPassed = passedExam && passedProject){
+else (isPassed = passedExam && passedProject){
     return passed = true;
 }
-else{
-    return passed = false;
-}
+
+
 }
