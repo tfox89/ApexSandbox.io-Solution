@@ -10,6 +10,6 @@ else if (isPassed = passedProject && passedAssignments){
 else if (isPassed = passedExam && passedProject){
     passed = true;
 }
-
+return passed
 
 }
