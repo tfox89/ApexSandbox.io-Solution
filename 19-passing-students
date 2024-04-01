@@ -1,7 +1,4 @@
 public Boolean isPassed(Boolean passedExam, Boolean passedAssignments, Boolean passedProject) {
-
-   
-
     Boolean passed = false; // Initialize passed variable
     
     if (passedExam && passedAssignments) {
@@ -11,6 +8,6 @@ public Boolean isPassed(Boolean passedExam, Boolean passedAssignments, Boolean p
     } else if (passedExam && passedProject) {
         passed = true;
     }
-
+    
     return passed;
 }
