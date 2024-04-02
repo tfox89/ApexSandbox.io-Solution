@@ -13,6 +13,9 @@ else if (n>=15 && n<=21){
 Else if (n>=22){
     return 'Adult';
 }
+Else {
+    return 'null';
+}
 
     
     
