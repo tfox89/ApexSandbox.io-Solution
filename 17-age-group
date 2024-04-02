@@ -6,16 +6,16 @@ public String ageGroup(Integer n) {
     Adult = (>22);
 
     if(ageGroup == Infant){
-        return "Infant"
+        return 'Infant'
     }
     Else if(ageGroup == Child){
-        return "Child"
+        return 'Child'
     }
     else if(ageGroup == Youth){
-        return "Youth"
+        return 'Youth'
     }
     else if(ageGroup == Adult){
-        return "Adult"
+        return 'Adult'
     }
 
 }
