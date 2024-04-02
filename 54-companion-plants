@@ -1,9 +1,9 @@
 public Boolean companionPlants(String plant1, String plant2) {
     //code here
-if(plant1 == lettuce && plant2 == cucumbers || plant1 == lettuce && plant2 == onions){
+if((plant1 == 'lettuce' && plant2 == 'cucumbers') || plant1 == 'lettuce' && plant2 == 'onions'){
     return true;
 }
-else if(plant1 == onions && plant2 == carrots || plant1 == onions && plant2 == tomatoes){
+else if((plant1 == 'onions' && plant2 == 'carrots') || plant1 == 'onions' && plant2 == 'tomatoes'){
     return true;
 }
 else{
