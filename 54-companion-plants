@@ -4,7 +4,7 @@ if ((plant1 == 'lettuce' && plant2 == 'cucumbers') || (plant1 == 'lettuce' && pl
         (plant1 == 'onions' && plant2 == 'carrots') || (plant1 == 'onions' && plant2 == 'tomatoes')) {
         return true;
     } 
-    return true;
+  
 
 
 
