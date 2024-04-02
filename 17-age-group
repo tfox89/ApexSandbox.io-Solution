@@ -1,15 +1,15 @@
 public String ageGroup(Integer n) {
     //code here
 if(n >=0, && n=1)
-{return Infant}
-else if(n=2, && <=14){
-    return Child
+{return 'Infant'}
+else if(n>=2, && <=14){
+    return 'Child'
 }
-else if (n=15, && <=21){
-    return Youth
+else if (n>=15, && <=21){
+    return 'Youth'
 }
 Else if (n>=22){
-    return Adult
+    return 'Adult'
 }
 
     
