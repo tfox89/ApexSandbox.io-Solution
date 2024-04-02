@@ -1,11 +1,11 @@
 public String ageGroup(Integer n) {
     //code here
-if(n >=0, && n<=1)
+if(n >=0 && n<=1)
 {return 'Infant'}
-else if(n>=2, && <=14){
+else if(n>=2 && <=14){
     return 'Child'
 }
-else if (n>=15, && <=21){
+else if (n>=15 && <=21){
     return 'Youth'
 }
 Else if (n>=22){
