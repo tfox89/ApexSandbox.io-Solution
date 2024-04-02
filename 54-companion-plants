@@ -5,7 +5,7 @@ if((plant1 == 'lettuce' && plant2 == 'cucumbers') || plant1 == 'lettuce' && plan
     return true;
 }
 else if((plant1 == 'onions' && plant2 == 'carrots') || plant1 == 'onions' && plant2 == 'tomatoes') ||
-        (plant 1 == 'cucumbers' && plant2 == 'lettuce')|| plant1 == 'onions' && plant2 == 'lettuce'))
+        (plant1 == 'cucumbers' && plant2 == 'lettuce')|| plant1 == 'onions' && plant2 == 'lettuce'))
 {
     return true;
 }
