@@ -1,0 +1,21 @@
+public String ageGroup(Integer n) {
+    //code here
+    Infant = (>=0,<=1);
+    Child = (>=2,<=14);
+    Youth = (>=15,<=21);
+    Adult = (>22);
+
+    if(ageGroup == Infant){
+        return "Infant"
+    }
+    Else if(ageGroup == Child){
+        return "Child"
+    }
+    else if(ageGroup == Youth){
+        return "Youth"
+    }
+    else if(ageGroup == Adult){
+        return "Adult"
+    }
+
+}
