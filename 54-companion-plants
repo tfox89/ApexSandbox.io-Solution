@@ -6,6 +6,12 @@ if((plant1 == 'lettuce' && plant2 == 'cucumbers') || plant1 == 'lettuce' && plan
 else if((plant1 == 'onions' && plant2 == 'carrots') || plant1 == 'onions' && plant2 == 'tomatoes'){
     return true;
 }
+else if((plant 1 == 'cucumbers' && plant2 == 'lettuce')|| plant1 == 'onions' && plant2 == 'lettuce'){
+    return true;
+}
+else if((plant1 == 'carrots' && plant2 == 'onions') || plant1 == 'tomatoes' && plant2 == 'onions'){
+    return true;
+}
 else{
     return false;
 }
