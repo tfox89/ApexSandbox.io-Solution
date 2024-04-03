@@ -8,8 +8,9 @@ public Boolean isPrime(Integer num) {
             return false; // If num is divisible by any number in the range, it's not prime
         }
     }
-    
+    else{
     return true; // If num is not divisible by any number in the range, it's prime
+}
 }
 
     
