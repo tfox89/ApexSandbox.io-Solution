@@ -11,3 +11,7 @@ public Boolean isPrime(Integer num) {
     
     return true; // If num is not divisible by any number in the range, it's prime
 }
+
+    
+    
+
