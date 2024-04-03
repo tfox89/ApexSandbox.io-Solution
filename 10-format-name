@@ -1,11 +1,16 @@
 public String formatName(String firstName, String lastName) {
-    if (String.isBlank(firstName) && String.isBlank(lastName)) {
-        return ''; // Both names are null or empty, return empty string
-    } else if (String.isBlank(firstName)) {
-        return lastName; // Return last name if first name is null or empty
-    } else if (String.isBlank(lastName)) {
-        return firstName; // Return first name if last name is null or empty
-    } else {
-        return lastName + ', ' + firstName; // Concatenate last name, comma, and first name
+    //code here
+    if(String.isblank(firstName) && String.isblank(lastName)){
+        return ' ';
     }
+    else if(lastName == null){
+        return firstName;
+    }
+
+else if(firstName == null){
+    return lastName;
+}
+    else 
+    {return firstName + ' ' + lastName; }
+
 }
