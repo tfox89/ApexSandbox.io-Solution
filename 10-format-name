@@ -11,6 +11,8 @@ else if(String.isblank(firstName)){
     return lastName;
 }
     else 
-    {return firstName + ' ' + lastName; }
+    {
+        return firstName + ' ' + lastName; 
+    }
 
 }
