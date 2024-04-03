@@ -3,10 +3,10 @@ public Boolean isLeapYear(Integer year) {
     if(Math.mod year,4 !=0){
         return false;
     }
-    else if (Math.mod year,4 && year,100 != 0){
+    else if ((Math.mod year,4) && (year,100 != 0)){
         return false;
     }
-    else if (Math.mod year,4 && year,100 && year,400 !=0){
+    else if ((Math.mod year,4) && (year,100) && (year,400 !=0)){
         return false;
     }
     else{
