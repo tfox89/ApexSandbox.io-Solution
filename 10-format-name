@@ -1,11 +1,11 @@
 public String formatName(String firstName, String lastName) {
-    if (firstName == null && lastName == null) {
-        return ''; // Return empty string if both first name and last name are null
-    } else if (lastName == null) {
-        return firstName; // Return first name if last name is null
-    } else if (firstName == null) {
-        return lastName; // Return last name if first name is null
+    if (String.isBlank(firstName) && String.isBlank(lastName)) {
+        return ''; // Both names are null or empty, return empty string
+    } else if (String.isBlank(firstName)) {
+        return lastName; // Return last name if first name is null or empty
+    } else if (String.isBlank(lastName)) {
+        return firstName; // Return first name if last name is null or empty
     } else {
-        return firstName + ' ' + lastName; // Concatenate first name and last name with a space
+        return lastName + ', ' + firstName; // Concatenate last name, comma, and first name
     }
 }
