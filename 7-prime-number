@@ -1,16 +1,16 @@
 public Boolean isPrime(Integer num) {
-
     if (num <= 1) {
         return false; // 1 and numbers less than 1 are not prime
     }
     
     for (Integer i = 2; i < num; i++) {
-        if (Math.mod(num, i) == 0) {
+        if Math.mod(num, i)== 0) {
             return false; // If num is divisible by any number in the range, it's not prime
         }
     }
-    
+    else{
     return true; // If num is not divisible by any number in the range, it's prime
+}
 }
 
     
