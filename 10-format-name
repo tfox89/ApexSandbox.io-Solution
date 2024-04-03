@@ -3,11 +3,11 @@ public String formatName(String firstName, String lastName) {
     if(String.isblank(firstName) && String.isblank(lastName)){
         return ' ';
     }
-    else if(lastName == null){
+    else if(String.isblank(lastName)){
         return firstName;
     }
 
-else if(firstName == null){
+else if(String.isblank(firstName)){
     return lastName;
 }
     else 
