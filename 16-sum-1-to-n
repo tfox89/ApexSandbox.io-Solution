@@ -4,5 +4,5 @@ public Integer sumToN(Integer n) {
     for(Integer i = 1; i <= n; i++){
          sum += i;
     }
-    Return sum;
+    return sum;
 }
