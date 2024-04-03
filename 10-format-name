@@ -1,7 +1,7 @@
 public String formatName(String firstName, String lastName) {
     //code here
     if(String.isblank(firstName) && String.isblank(lastName)){
-        return ' ';
+        return '';
     }
     else if(String.isblank(lastName)){
         return firstName;
