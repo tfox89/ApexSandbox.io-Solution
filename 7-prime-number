@@ -1,15 +1,13 @@
 public Boolean isPrime(Integer num) {
-    //code here
-    if(num <= 1){
-        return false;
+    if (num <= 1) {
+        return false; // 1 and numbers less than 1 are not prime
     }
-    for(Interger i = 2; i < num; i++) {
-        if(num % i == 0){
-            return false;
+    
+    for (Integer i = 2; i < num; i++) {
+        if (num % i == 0) {
+            return false; // If num is divisible by any number in the range, it's not prime
         }
-        
-            return true;
-        
     }
-
+    
+    return true; // If num is not divisible by any number in the range, it's prime
 }
