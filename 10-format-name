@@ -9,9 +9,9 @@ public String formatName(String firstName, String lastName) {
     }
 
 else if(firstName == null){
-    return firstName;
+    return lastName;
 }
     else 
-    {return fullName; }
+    {return firstName + fullName + lastName; }
 
 }
