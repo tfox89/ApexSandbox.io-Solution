@@ -1,5 +1,7 @@
 public String changeTimeFormat(String strTime) {
-         List<String> timeParts = strTime.split(':');
+  
+        // Splitting the input string into hours and minutes
+        List<String> timeParts = strTime.split(':');
         Integer hours = Integer.valueOf(timeParts[0]);
         Integer minutes = Integer.valueOf(timeParts[1]);
 
@@ -7,10 +9,10 @@ public String changeTimeFormat(String strTime) {
         String period = hours < 12 ? 'AM' : 'PM';
 
         // Convert hours to 12-hour format
-        if (hours == 0) {
-            hours = 12;
-        } else if (hours > 12) {
+        if (hours > 12) {
             hours -= 12;
+        } else if (hours == 0) {
+            hours = 12;
         }
 
         // Format the result
