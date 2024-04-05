@@ -1,0 +1,31 @@
+public String changeTimeFormat(String strTime) {
+    //code here
+    List<String> timeParts = strTime.split(':');
+    Integer hours = Integer.valueof strTime(0);
+    Integer minutes = Integer.valueof strTime(1);
+    Integer newhours;
+    String period;
+
+    if(hours == 0){
+        newhours = 12;
+        period ='AM';
+    }
+    else if(hours >= 1 && hours <=11)
+    {
+        newhours = hours;
+        period = 'AM';
+    }
+    else if(hours == 12){
+        newhours = 12;
+        period = "pm"
+    
+    } else {
+            newHours = hours - 12;
+            period = 'PM';
+        }
+        String newTime = String.format('{0}:{1} {2}', new List<Object>{newHours, minutes < 10 ? '0'+minutes : minutes, period});
+        return newTime;
+    
+
+    
+}
