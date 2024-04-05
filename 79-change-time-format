@@ -1,6 +1,8 @@
 public String changeTimeFormat(String strTime) {
        
    
+       public class TimeConversion {
+    public static String changeTimeFormat(String strTime) {
         // Splitting the input string into hours and minutes
         List<String> timeParts = strTime.split(':');
         Integer hours = Integer.valueOf(timeParts[0]);
@@ -24,9 +26,21 @@ public String changeTimeFormat(String strTime) {
         }
 
         // Formatting the result
-        String newTime = String.valueOf(newHours <10 ? '0' +newHours : newHours) + ':' + (minutes < 10 ? '0' + String.valueOf(minutes) : String.valueOf(minutes)) + ' ' + period;
+        String newTime = String.valueOf(newHours < 10 ? '0' + newHours : newHours) + ':' + (minutes < 10 ? '0' + String.valueOf(minutes) : String.valueOf(minutes)) + ' ' + period;
         return newTime;
     }
+
+    public static void main(String[] args) {
+        String result = changeTimeFormat('08:05');
+        System.assertEquals('08:05 AM', result, 'Should have converted to 08:05 AM');
+
+        result = changeTimeFormat('00:05');
+        System.assertEquals('12:05 AM', result, 'Should have converted to 12:05 AM');
+
+        result = changeTimeFormat('23:15');
+        System.assertEquals('11:15 PM', result, 'Should have converted to 11:15 PM');
+    }
+}
 
     
     
