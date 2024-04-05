@@ -1,6 +1,5 @@
 public String changeTimeFormat(String strTime) {
   
-        // Splitting the input string into hours and minutes
         List<String> timeParts = strTime.split(':');
         Integer hours = Integer.valueOf(timeParts[0]);
         Integer minutes = Integer.valueOf(timeParts[1]);
@@ -15,8 +14,12 @@ public String changeTimeFormat(String strTime) {
             hours = 12;
         }
 
-        // Format the result
-        String newTime = String.valueOf(hours) + ':' + (minutes < 10 ? '0' + String.valueOf(minutes) : String.valueOf(minutes)) + ' ' + period;
+        // Format the result with leading zeros for hours and minutes
+        String formattedHours = String.valueOf(hours < 10 ? '0' + String.valueOf(hours) : hours);
+        String formattedMinutes = String.valueOf(minutes < 10 ? '0' + String.valueOf(minutes) : minutes);
+
+        // Concatenate the formatted time components
+        String newTime = formattedHours + ':' + formattedMinutes + ' ' + period;
         return newTime;
     }
    
