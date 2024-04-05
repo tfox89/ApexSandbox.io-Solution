@@ -1,10 +1,10 @@
 public Integer fibonacci(Integer n) {
     //code here
     if(n <= 0){
-    return 0
+    return 0;
 }
 else if(n = 1){
-    return 1
+    return 1;
 }
 
 Integer fibPrev = 0;
