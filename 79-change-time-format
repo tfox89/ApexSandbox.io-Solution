@@ -1,4 +1,6 @@
 public String changeTimeFormat(String strTime) {
+       
+   
         // Splitting the input string into hours and minutes
         List<String> timeParts = strTime.split(':');
         Integer hours = Integer.valueOf(timeParts[0]);
@@ -22,9 +24,17 @@ public String changeTimeFormat(String strTime) {
         }
 
         // Formatting the result
-        String newTime = String.format('{0}:{1} {2}', new List<Object>{newHours, minutes < 10 ? '0'+minutes : minutes, period});
+        String newTime = String.valueOf(newHours) + ':' + (minutes < 10 ? '0' + String.valueOf(minutes) : String.valueOf(minutes)) + ' ' + period;
         return newTime;
     }
+
+    public static void main(String[] args) {
+        System.debug(changeTimeFormat('08:05')); // Output: '08:05 AM'
+        System.debug(changeTimeFormat('00:05')); // Output: '12:05 AM'
+        System.debug(changeTimeFormat('23:15')); // Output: '11:15 PM'
+    }
+}
+
 
     
 
