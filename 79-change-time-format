@@ -24,7 +24,7 @@ public String changeTimeFormat(String strTime) {
         }
 
         // Formatting the result
-        String newTime = String.valueOf(newHours <10 ? '0' + newHours : newhours) + ':' + (minutes < 10 ? '0' + String.valueOf(minutes) : String.valueOf(minutes)) + ' ' + period;
+        String newTime = String.valueOf(newHours <10 ? '0' +newHours : newHours) + ':' + (minutes < 10 ? '0' + String.valueOf(minutes) : String.valueOf(minutes)) + ' ' + period;
         return newTime;
     }
 
