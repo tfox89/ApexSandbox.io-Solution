@@ -33,3 +33,4 @@ public Integer nextPrime(Integer num) {
         System.assertEquals(11, result2, 'Next prime after 8 should be 11');
     }
 }
+}
