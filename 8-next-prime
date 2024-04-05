@@ -1,0 +1,35 @@
+public Integer nextPrime(Integer num) {
+   public class PrimeNumber {
+    // Helper function to check if a number is prime
+    private static Boolean isPrime(Integer n) {
+        if (n <= 1) {
+            return false;
+        }
+        for (Integer i = 2; i * i <= n; i++) {
+            if (n % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+    
+    // Function to find the smallest prime number greater than num
+    public static Integer nextPrime(Integer num) {
+        num++; // Start searching from the next number after num
+        while (true) {
+            if (isPrime(num)) {
+                return num;
+            }
+            num++; // Increment to check the next number
+        }
+    }
+    
+    // Main method for testing
+    public static void main(String[] args) {
+        Integer result1 = nextPrime(10);
+        System.assertEquals(11, result1, 'Next prime after 10 should be 11');
+        
+        Integer result2 = nextPrime(8);
+        System.assertEquals(11, result2, 'Next prime after 8 should be 11');
+    }
+}
