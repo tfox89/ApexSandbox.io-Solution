@@ -5,10 +5,6 @@ public String reverseWordsInASentence(String sentence){
         return reversedSentence.trim();
     }
     
-    public static void main(String []args){
-        String sentence = 'The quick brown fox jumps over the lazy dog';
-        String reversed = reverseWordsInASentence(sentence);
-        System.debug('Reversed sentence: ' + reversed);
-        // Output: Reversed sentence: dog lazy the over jumps fox brown quick The
-    }
+    
+    
 
