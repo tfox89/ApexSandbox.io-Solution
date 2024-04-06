@@ -2,6 +2,7 @@ public String reverseWordsInASentence(String sentence){
     //your flawless code here
     List <String> charList = sentence.split(' ');
 charList.reverse(); 
-return String.join(charList, '');
+ String.join(charList, '');
+ return charList.trim();
 
 }
