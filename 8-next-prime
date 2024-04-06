@@ -31,6 +31,3 @@ public Integer nextPrime(Integer num) {
         System.debug(nextPrime(10)); // Output: 11
         System.debug(nextPrime(8));  // Output: 11
     }
-}
-
-}
